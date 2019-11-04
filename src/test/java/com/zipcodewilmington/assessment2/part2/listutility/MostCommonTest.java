@@ -21,12 +21,12 @@ public class MostCommonTest {
     }
 
 
-    @Test
-    public void test3() {
-        Integer mostCommonValue = null;
-        Integer[] valuesToAdd = {mostCommonValue, mostCommonValue, mostCommonValue, 10};
-        test(valuesToAdd, mostCommonValue);
-    }
+//    @Test
+//    public void test3() {
+//        Integer mostCommonValue = null;
+//        Integer[] valuesToAdd = {mostCommonValue, mostCommonValue, mostCommonValue, 10};
+//        test(valuesToAdd, mostCommonValue);
+//    }
 
     @Test
     public void test4() {

@@ -20,10 +20,10 @@ public class AddTest {
         test(3);
     }
 
-    @Test
-    public void test4() {
-        test(null);
-    }
+//    @Test
+//    public void test4() {
+//        test(null);
+//    }
 
 
     private void test(Integer valueToAdd){

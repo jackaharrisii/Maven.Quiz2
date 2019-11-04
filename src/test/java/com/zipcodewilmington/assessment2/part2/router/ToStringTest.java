@@ -11,14 +11,14 @@ public class ToStringTest {
                 new Pair<>("/users", "UserController"));
     }
 
-    @Test
-    public void test2() {
-        test(
-                new Pair<>("/users", "UserController"),
-                new Pair<>("/students", "StudentController"),
-                new Pair<>("/instructors", "InstructorController"),
-                new Pair<>("/students", "StudentController"));
-    }
+//    @Test
+//    public void test2() {
+//        test(
+//                new Pair<>("/users", "UserController"),
+//                new Pair<>("/students", "StudentController"),
+//                new Pair<>("/instructors", "InstructorController"),
+//                new Pair<>("/students", "StudentController"));
+//    }
 
 
     @Test
@@ -36,7 +36,6 @@ public class ToStringTest {
                 new Pair<>("/instructors", "InstructorController"));
     }
 
-    @Test
     public void test(Pair<String, String>... pairs) {
         // given
         StringBuilder expectedString = new StringBuilder();
