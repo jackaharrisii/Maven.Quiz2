@@ -15,15 +15,7 @@ public class Router {
     }
 
     public String getController(String path) {
-        String outputString = "";
-        Iterator<String> mapIterator = testMap.keySet().iterator();
-        while(mapIterator.hasNext()){
-            String key = mapIterator.next();
-            outputString += key + testMap.get(key);
-        }
-
-//        outputString += testMap.get(path).toString();
-
+        String outputString = (String)testMap.get(path);
         return outputString;
     }
 
