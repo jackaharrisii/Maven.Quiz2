@@ -20,7 +20,7 @@ public class Router {
     }
 
     public void update(String path, String studentController) {
-        testMap.replace(studentController, path);
+        testMap.replace(path, studentController);
     }
 
     public void remove(String path) {
