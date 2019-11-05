@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Router {
 
-    HashMap<String, String> testMap = new HashMap<String, String>();
+    LinkedHashMap<String, String> testMap = new LinkedHashMap<String, String>();
 
     public void add(String path, String controller) {
         testMap.put(path, controller);
@@ -17,6 +17,14 @@ public class Router {
     public String getController(String path) {
         String outputString = (String)testMap.get(path);
         return outputString;
+    }
+
+    public String toString(){
+        StringBuilder resultOfToString = new StringBuilder();
+        for(String key: this.testMap.keySet()) {
+            resultOfToString.append(key).append(testMap.get(key)).append("\n");
+        }
+        return resultOfToString.toString();
     }
 
     public void update(String path, String studentController) {
